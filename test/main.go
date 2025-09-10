@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	// --- twoSum.go: Testing twoSum ---
-	fmt.Println("[twoSum.go] Testing twoSum")
+	// --- Testing 1.go ---
+	fmt.Println("Testing 1.go")
 	nums1 := []int{2, 7, 11, 15}
 	target1 := 9
 	fmt.Printf("Input: nums = %v, target = %d\n", nums1, target1)
@@ -20,8 +20,8 @@ func main() {
 	fmt.Printf("Input: nums = %v, target = %d\n", nums3, target3)
 	fmt.Printf("Output: %v\n\n", twoSum(nums3, target3))
 
-	// --- validParentheses.go: Testing isValid ---
-	fmt.Println("[validParentheses.go] Testing isValid")
+	// --- Testing 2.go ---
+	fmt.Println("Testing 2.go")
 	s1 := "()"
 	fmt.Printf("Input: s = \"%s\"\n", s1)
 	fmt.Printf("Output: %t\n\n", isValid(s1))
@@ -34,8 +34,8 @@ func main() {
 	fmt.Printf("Input: s = \"%s\"\n", s3)
 	fmt.Printf("Output: %t\n\n", isValid(s3))
 
-	// --- mergeTwoLists.go: Testing mergeTwoLists ---
-	fmt.Println("[mergeTwoLists.go] Testing mergeTwoLists")
+	// --- Testing 3.go ---
+	fmt.Println("Testing 3.go")
 	list1_1 := buildList([]int{1, 2, 4})
 	list2_1 := buildList([]int{1, 3, 4})
 	fmt.Print("Input: list1 = [1,2,4], list2 = [1,3,4]\nOutput: ")
@@ -51,8 +51,8 @@ func main() {
 	fmt.Print("Input: list1 = [], list2 = [0]\nOutput: ")
 	printList(mergeTwoLists(list1_3, list2_3))
 
-	// --- maxProfit.go: Testing maxProfit ---
-	fmt.Println("[maxProfit.go] Testing maxProfit")
+	// --- Testing 4.go ---
+	fmt.Println("Testing 4.go")
 	prices1 := []int{7, 1, 5, 3, 6, 4}
 	fmt.Printf("Input: prices = %v\n", prices1)
 	fmt.Printf("Output: %d\n\n", maxProfit(prices1))
@@ -61,8 +61,8 @@ func main() {
 	fmt.Printf("Input: prices = %v\n", prices2)
 	fmt.Printf("Output: %d\n\n", maxProfit(prices2))
 
-	// --- isPalindrome.go: Testing isPalindrome ---
-	fmt.Println("[isPalindrome.go] Testing isPalindrome")
+	// --- Testing 5.go ---
+	fmt.Println("Testing 5.go")
 	p1 := "A man, a plan, a canal: Panama"
 	fmt.Printf("Input: s = \"%s\"\n", p1)
 	fmt.Printf("Output: %t\n\n", isPalindrome(p1))
@@ -75,8 +75,8 @@ func main() {
 	fmt.Printf("Input: s = \"%s\"\n", p3)
 	fmt.Printf("Output: %t\n\n", isPalindrome(p3))
 
-	// --- hasCycle.go: Testing hasCycle ---
-	fmt.Println("[hasCycle.go] Testing hasCycle")
+	// --- Testing 6.go ---
+	fmt.Println("Testing 6.go")
 	head1 := buildListWithCycle([]int{3, 2, 0, -4}, 1)
 	fmt.Println("Input: [3,2,0,-4] with cycle at pos 1")
 	fmt.Printf("Output: %t\n\n", hasCycle(head1))
@@ -89,8 +89,8 @@ func main() {
 	fmt.Println("Input: [1] with no cycle")
 	fmt.Printf("Output: %t\n\n", hasCycle(head3))
 
-	// --- search.go: Testing search ---
-	fmt.Println("[search.go] Testing search")
+	// --- Testing 7.go ---
+	fmt.Println("Testing 7.go")
 	nums_1 := []int{-1, 0, 3, 5, 9, 12}
 	target_1 := 9
 	fmt.Printf("Input: nums = %v, target = %d\n", nums_1, target_1)
@@ -100,8 +100,8 @@ func main() {
 	fmt.Printf("Input: nums = %v, target = %d\n", nums_1, target_2)
 	fmt.Printf("Output: %d\n\n", search(nums_1, target_2))
 
-	// --- floodFill.go: Testing floodFill ---
-	fmt.Println("[floodFill.go] Testing floodFill")
+	// --- Testing 9.go ---
+	fmt.Println("Testing 9.go")
 	image1 := [][]int{{1, 1, 1}, {1, 1, 0}, {1, 0, 1}}
 	sr1, sc1, color1 := 1, 1, 2
 	fmt.Printf("Input: image = %v, sr = %d, sc = %d, color = %d\n", image1, sr1, sc1, color1)
@@ -115,8 +115,8 @@ func main() {
 	fmt.Println("Output:")
 	printImage(floodFill(image2, sr2, sc2, color2))
 
-	// --- lowestCommonAncestor.go: Testing lowestCommonAncestor ---
-	fmt.Println("[lowestCommonAncestor.go] Testing lowestCommonAncestor")
+	// --- Testing 10.go ---
+	fmt.Println("Testing 10.go")
 	vals1 := []interface{}{6, 2, 8, 0, 4, 7, 9, nil, nil, 3, 5}
 	root1 := buildTree(vals1)
 	p_1 := findNode(root1, 2)
@@ -131,8 +131,8 @@ func main() {
 	fmt.Println("Input: root = [6,2,8,0,4,7,9,null,null,3,5], p=2, q=4")
 	fmt.Printf("Output: %d\n\n", lca2.Val)
 
-	// --- isBalanced.go: Testing isBalanced ---
-	fmt.Println("[isBalanced.go] Testing isBalanced")
+	// --- Testing 11.go ---
+	fmt.Println("Testing 11.go")
 	vals_1 := []interface{}{3, 9, 20, nil, nil, 15, 7}
 	root_1 := buildTree(vals_1)
 	fmt.Println("Input: [3,9,20,null,null,15,7]")
@@ -147,8 +147,8 @@ func main() {
 	fmt.Println("Input: []")
 	fmt.Printf("Output: %t\n\n", isBalanced(root3))
 
-	// --- queueUsingStack.go: Testing MyQueue ---
-	fmt.Println("[queueUsingStack.go] Testing MyQueue")
+	// --- Testing 12.go ---
+	fmt.Println("Testing 12.go")
 	q := NewMyQueue()
 	q.Push(1)
 	q.Push(2)
@@ -156,8 +156,8 @@ func main() {
 	fmt.Printf("Pop: %d\n", q.Pop())     // 1
 	fmt.Printf("Empty: %t\n", q.Empty()) // false
 
-	// --- minStack.go: Testing MinStack ---
-	fmt.Println("[minStack.go] Testing MinStack")
+	// --- Testing 13.go ---
+	fmt.Println("Testing 13.go")
 	ms := NewMinStack()
 	ms.Push(-2)
 	ms.Push(0)
@@ -167,8 +167,8 @@ func main() {
 	fmt.Printf("Top: %d\n", ms.Top())       // 0
 	fmt.Printf("GetMin: %d\n", ms.GetMin()) // -2
 
-	// --- invertTree.go: Testing invertTree ---
-	fmt.Println("[invertTree.go] Testing invertTree")
+	// --- Testing 14.go ---
+	fmt.Println("Testing 14.go")
 	vals__1 := []interface{}{4, 2, 7, 1, 3, 6, 9}
 	root__1 := buildTree(vals__1)
 	fmt.Println("Input: [4,2,7,1,3,6,9]")
